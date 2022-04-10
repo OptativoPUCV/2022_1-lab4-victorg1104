@@ -141,7 +141,7 @@ Pair * firstMap(HashMap * map) {
 
     long posicion = 0;
 
-    while (map->buckets[posicion]==NULL)
+    while (1)
     {
         if(map->buckets[posicion]->key==NULL)
         {
@@ -150,10 +150,12 @@ Pair * firstMap(HashMap * map) {
             if(posicion==(map->capacity))
                 posicion=0;
         }
+        else
+        {
+            map->current=posicion;
+            return map->buckets[posicion];
+        }
     }
-
-    map->current = posicion;
-    return map->buckets[posicion];
 }
 
 Pair * nextMap(HashMap * map) {
