@@ -143,7 +143,7 @@ Pair * firstMap(HashMap * map) {
 
     while (1)
     {
-        if(map->buckets[posicion]->key!=NULL)
+        if((map->buckets[posicion]!=NULL)&&(map->buckets[posicion]->key!=NULL))
         {
             map->current = posicion;
             return map->buckets[posicion];
