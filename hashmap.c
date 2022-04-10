@@ -141,7 +141,7 @@ Pair * firstMap(HashMap * map) {
 
     long posicion = 0;
 
-    while (map->buckets[posicion]->key==NULL)
+    while (map->buckets[posicion]==NULL)
     {
         posicion++;
 
