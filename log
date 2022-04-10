@@ -201,3 +201,9 @@ Sun Apr 10 14:45:19 HSP 2022:
  1 file changed, 15 insertions(+), 1 deletion(-)
  tests:  0|0
 7be390e
+Sun Apr 10 14:47:02 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  15|2
+total_score: 50/70
+36d9de2
