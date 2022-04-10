@@ -100,6 +100,9 @@ Pair * searchMap(HashMap * map,  char * key) {
         if(posicion==(map->capacity))
             posicion=0;
 
+        if(map->buckets[posicion]==NULL)
+            return NULL;
+
         if (is_equal((map->buckets[posicion]->key),key))
         {
             map->current=posicion;
