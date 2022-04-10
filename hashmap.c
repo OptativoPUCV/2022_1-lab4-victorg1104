@@ -165,7 +165,10 @@ Pair * nextMap(HashMap * map) {
         next++;
 
         if(next==(map->capacity))
+        {
             next=0;
+            return NULL;
+        }
     }
     
     map->current=next;
