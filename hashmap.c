@@ -155,13 +155,5 @@ Pair * firstMap(HashMap * map) {
 
 Pair * nextMap(HashMap * map) {
 
-    long posicion = map->current;
-
-    while ()
-    {
-        /* code */
-    }
-    
-
     return NULL;
 }
