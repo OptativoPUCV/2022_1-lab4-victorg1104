@@ -142,11 +142,14 @@ Pair * firstMap(HashMap * map) {
     long posicion = 0;
 
     while (map->buckets[posicion]==NULL)
-    {  
-        posicion++;
+    {
+        if(map->buckets[posicion]->key==NULL)
+        {
+            posicion++;
 
-        if(posicion==(map->capacity))
-            posicion=0;
+            if(posicion==(map->capacity))
+                posicion=0;
+        }
     }
 
     map->current = posicion;
