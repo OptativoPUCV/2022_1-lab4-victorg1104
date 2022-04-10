@@ -176,3 +176,17 @@ Sun Apr 10 14:34:18 HSP 2022:
  tests:  13|2
 total_score: 50/70
 bbdeb68
+Sun Apr 10 14:37:21 HSP 2022: 
+ hashmap.c | 21 ++++++++++++---------
+ 1 file changed, 12 insertions(+), 9 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'nextMap':
+hashmap.c:160:12: error: expected expression before ')' token
+     while ()
+            ^
+hashmap.c:158:10: error: unused variable 'posicion' [-Werror=unused-variable]
+     long posicion = map->current;
+          ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+99dc8dd

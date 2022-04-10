@@ -141,24 +141,27 @@ Pair * firstMap(HashMap * map) {
 
     long posicion = 0;
 
-    while (1)
+    while ((map->buckets[posicion]==NULL)||(map->buckets[posicion]->key==NULL))
     {
-        if((map->buckets[posicion]!=NULL)&&(map->buckets[posicion]->key!=NULL))
-        {
-            map->current = posicion;
-            return map->buckets[posicion];
-        }
-        else
-        {
-            posicion++;
+        posicion++;
 
-            if(posicion==(map->capacity))
-                posicion=0;
-        }       
+        if(posicion==(map->capacity))
+            posicion=0;
     }
+
+    map->current = posicion;
+    return map->buckets[posicion];
 }
 
 Pair * nextMap(HashMap * map) {
+
+    long posicion = map->current;
+
+    while ()
+    {
+        /* code */
+    }
+    
 
     return NULL;
 }
