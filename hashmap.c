@@ -143,18 +143,18 @@ Pair * firstMap(HashMap * map) {
 
     while (1)
     {
-        if(map->buckets[posicion]->key==NULL)
+        if(map->buckets[posicion]->key!=NULL)
+        {
+            map->current = posicion;
+            return map->buckets[posicion];
+        }
+        else
         {
             posicion++;
 
             if(posicion==(map->capacity))
                 posicion=0;
-        }
-        else
-        {
-            map->current=posicion;
-            return map->buckets[posicion];
-        }
+        }       
     }
 }
 
