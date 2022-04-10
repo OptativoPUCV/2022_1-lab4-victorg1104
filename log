@@ -98,3 +98,9 @@ Sun Apr 10 13:41:00 HSP 2022:
  1 file changed, 2 insertions(+)
  tests:  0|0
 6a95ce4
+Sun Apr 10 13:43:13 HSP 2022: 
+ hashmap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ tests:  10|0
+   [ INFO ] se intenta eliminar dato que no existe (key:holo con hash=2)
+fedbd22

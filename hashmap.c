@@ -80,6 +80,9 @@ void eraseMap(HashMap * map,  char * key) {
 
     long posicion = hash(key, map->capacity);
 
+    if(map->buckets[posicion]==NULL)
+            exit(1);
+
     if (is_equal((map->buckets[posicion]->key),key))
             map->buckets[posicion]->key=NULL;
 
@@ -89,6 +92,9 @@ void eraseMap(HashMap * map,  char * key) {
 
         if(posicion==(map->capacity))
             posicion=0;
+
+        if(map->buckets[posicion]==NULL)
+            exit(1);
 
         if (is_equal((map->buckets[posicion]->key),key))
             map->buckets[posicion]->key=NULL;   
