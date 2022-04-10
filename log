@@ -28,3 +28,17 @@ Fri Apr  8 12:09:48 HSP 2022:
  tests:  5|4
 total_score: 30/70
 c5a4988
+Sun Apr 10 12:50:59 HSP 2022: 
+ hashmap.c | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:89:21: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+         map->current=map->buckets[posicion];
+                     ^
+hashmap.c:103:25: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+             map->current=map->buckets[posicion];
+                         ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2c9be5c
